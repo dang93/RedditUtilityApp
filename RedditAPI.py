@@ -30,6 +30,8 @@ class RedditAPI:
                                   password = ' ',
                                   user_agent = ' ')
 
+        
+
     def getUserComments(self, username):
         resultList = []
         for comment in self.reddit.redditor(username).comments.new(limit=100):
